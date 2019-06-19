@@ -1,5 +1,5 @@
 var total = 0
-var participantes = 5
+var participantes = 2
 var artefactos = 0
 var puntos = 0
 var acumulador = 0
@@ -13,6 +13,7 @@ for (i = 0; i < participantes; i++){
 
 for (n = 0; n < artefactos; n++){
     puntos = prompt("Digite la cantidad de puntos del artefacto " + (n+1))
+    puntos = parseInt(puntos)
     acumulador += puntos
 }
     document.write("La cantidad de puntos de " + nombre + " fue de " + acumulador + "<br>")
